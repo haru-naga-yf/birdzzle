@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://haru-naga-yf.github.io/birdzzle/sitemap.xml
