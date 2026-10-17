@@ -33,6 +33,26 @@
     });
   });
 
+  // 機能紹介(ホームの各セクション)が実際に読まれたか、FAQのどの質問が開かれたかの計測(同意するまでは送信されない)。
+  ready(function () {
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) {
+            io.unobserve(en.target);
+            gtag('event', 'feature_view', { feature: en.target.id, page_path: location.pathname });
+          }
+        });
+      }, { threshold: 0.5 });
+      document.querySelectorAll('section.feature[id]').forEach(function (el) { io.observe(el); });
+    }
+    document.querySelectorAll('details').forEach(function (d, i) {
+      d.addEventListener('toggle', function () {
+        if (d.open) gtag('event', 'faq_open', { question_index: i + 1, page_path: location.pathname });
+      });
+    });
+  });
+
   // App Storeボタン(どのページ・どの導線か)と「アプリで開く」の計測。
   document.addEventListener('click', function (e) {
     var a = e.target.closest && e.target.closest('a');
