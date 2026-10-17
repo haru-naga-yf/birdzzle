@@ -16,6 +16,7 @@
 <link rel="icon" href="../assets/img/icon.png">
 <link rel="stylesheet" href="../assets/site.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "ツーノットタッチ/スターバトル/クイーンズの解き方ガイド", "inLanguage": "ja", "description": "各行・各列・各領域に1つ、隣り合わない、という星・クイーン配置パズルの解き方を、Birdzzleのソルバーが使う6つのテクニックで解説します。"}</script>
+<script src="../assets/analytics.js" data-ga="G-CB7STQKE8T" defer></script>
 </head>
 <body>
 <header class="top"><div class="wrap">
@@ -25,8 +26,9 @@
 <main class="wrap">
 <article><h1>ツーノットタッチ/スターバトル/クイーンズの解き方ガイド</h1><p class="lead">このパズルは、盤面を色分けされた領域(なわばり)に分け、各行・各列・各領域にちょうど1つずつ、互いに(斜めも含めて)隣り合わないよう鳥(星・クイーン)を置くものです。Birdzzleの全問題は一意解で、次の6つのテクニックだけで解けます(推測は不要です)。やさしい問題は①②、ふつうは③④、むずかしいは⑤⑥までで解けます。</p><section><h2>① 確定配置</h2><p>ある行・列・領域で、鳥を置ける候補マスが1つしか残っていなければ、そこに鳥が入ります。まず領域が1マスだけ、または細い領域を探しましょう。</p></section><section><h2>② 基本除外</h2><p>鳥を置いたら、同じ行・同じ列・同じ領域、そして周囲8マスには他の鳥を置けません。✕を付けて候補を減らします。✕を自動で付ける設定もあります。</p></section><section><h2>③ 領域→線の絞り込み</h2><p>ある領域の候補マスが、すべて同じ1つの行(または列)に収まっているなら、その領域の鳥はその行に入ります。つまり、その行の他の領域のマスには鳥が入れません。</p></section><section><h2>④ 線→領域の絞り込み</h2><p>ある行(または列)の候補マスが、すべて同じ1つの領域に収まっているなら、その行の鳥はその領域のものです。その領域の、他の行のマスには鳥が入れません。</p></section><section><h2>⑤ 集合の一般化</h2><p>k個の領域の候補マスが、合わせてちょうどk本の行(または列)の中にしかないなら、その行たちの鳥はその領域たちのものです。それらの行の、他の領域のマスは除外できます。行と領域を入れ替えても成り立ちます。③④はk=1の場合です。</p></section><section><h2>⑥ 隣接連鎖</h2><p>ある行の候補マスが、隣り合う2マスだけなら、どちらに鳥が入っても、すぐ上と下の行で、その2マスの両方に隣り合うマス(同じ2つの列の位置)は使えません。</p></section>
 <section><h2>上達のコツ</h2><ul><li>小さい領域(1〜3マス)から攻める。</li><li>✕を付けてから、候補が少ない行・列・領域を探す。</li><li>行き詰まったら、領域ごとの候補を一度すべて書き出す(アプリでは長押しで行・列・領域をハイライト)。</li><li>ヒントは1マスだけ答えを教えてくれます。1日3回まで無料です。</li></ul></section>
-<p><a class="dl" href="https://apps.apple.com/jp/app/id6804975415?ct=site_guide">App Storeでダウンロード</a><span class="free">無料・オフラインで遊べます</span></p></article>
+<p><a class="dl" href="https://apps.apple.com/jp/app/id6804975415?ct=site_guide">App Storeでダウンロード</a><span class="free">無料・オフラインで遊べます</span><a class="open-app" href="birdzzle://open?src=site_guide" data-src="site_guide">インストール済みの方はアプリで開く</a></p></article>
 </main>
-<footer><div class="wrap"><p><a href="../privacy.html">プライバシーポリシー</a> / <a href="../support.html">サポート・お問い合わせ</a></p><p>&copy; 2026 Haruyoshi Nagafune. Birdzzle is an original game; all birds are fictional illustrations.</p></div></footer>
+<div id="consent" class="consent" hidden role="dialog" aria-live="polite"><p>サイトの改善のため、アクセス解析(Googleアナリティクス)を使ってもよいですか?同意しなくても、サイトはそのままご利用いただけます。 <a href="../privacy.html">プライバシーポリシー</a></p><p class="consent-btns"><button type="button" data-consent="granted">同意する</button><button type="button" data-consent="denied">同意しない</button></p></div>
+<footer><div class="wrap"><p><a href="../privacy.html">プライバシーポリシー</a> / <a href="../terms.html">利用規約</a> / <a href="../support.html">サポート・お問い合わせ</a></p><p>&copy; 2026 Haruyoshi Nagafune. Birdzzle is an original game; all birds are fictional illustrations.</p></div></footer>
 </body>
 </html>
