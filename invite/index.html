@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>友だちになろう | Birdzzle</title>
+<meta name="description" content="友だちが、あなたをBirdzzleに招待しています。アプリの「友だち」にこのコードを入力すると、お互いのとりごやを見に行けます。">
+<meta name="apple-itunes-app" content="app-id=6804975415">
+<meta property="og:title" content="友だちになろう | Birdzzle">
+<meta property="og:description" content="友だちが、あなたをBirdzzleに招待しています。アプリの「友だち」にこのコードを入力すると、お互いのとりごやを見に行けます。">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://haru-naga-yf.github.io/birdzzle/assets/img/icon.png">
+<link rel="canonical" href="https://haru-naga-yf.github.io/birdzzle/invite/index.html">
+<link rel="alternate" hreflang="ja" href="https://haru-naga-yf.github.io/birdzzle/invite/index.html">
+<link rel="alternate" hreflang="en" href="https://haru-naga-yf.github.io/birdzzle/en/invite/index.html">
+<link rel="icon" href="../assets/img/icon.png">
+<link rel="stylesheet" href="../assets/site.css">
+
+<script src="../assets/analytics.js" data-ga="G-CB7STQKE8T" defer></script>
+</head>
+<body>
+<header class="top"><div class="wrap">
+<a class="brand" href="../"><img src="../assets/img/icon.png" alt="" width="36" height="36"><span>Birdzzle</span></a>
+<nav><a href="../">ホーム</a><a href="../guide/">解き方ガイド</a><a href="../zukan/">鳥図鑑</a><a href="../faq.html">よくある質問</a><a href="../changelog.html">変更履歴</a><a href="../press.html">プレスキット</a><a class="lang" href="../en/invite/index.html">English</a></nav>
+</div></header>
+<main class="wrap">
+<article><h1>友だちになろう</h1><p class="lead">友だちが、あなたをBirdzzleに招待しています。アプリの「友だち」にこのコードを入力すると、お互いのとりごやを見に行けます。</p>
+<p class="cta"><a class="open-app" id="invite-open" href="birdzzle://open?src=invite">アプリで友だちになる</a></p>
+<p>友だちコード: <strong id="invite-code">------</strong></p>
+<p class="cta"><a class="dl" href="https://apps.apple.com/jp/app/id6804975415?ct=invite">App Storeでダウンロード</a><span class="free">無料・オフラインで遊べます</span><a class="open-app" href="birdzzle://open?src=invite" data-src="invite">インストール済みの方はアプリで開く</a></p>
+<script>
+(function(){var m=location.search.match(/[?&]code=([A-Za-z0-9-]{4,12})/);if(!m)return;var c=m[1].toUpperCase();
+document.getElementById('invite-code').textContent=c;document.getElementById('invite-open').href='birdzzle://friend?code='+encodeURIComponent(c);})();
+</script></article>
+</main>
+<div id="consent" class="consent" hidden role="dialog" aria-live="polite"><p>サイトの改善のため、アクセス解析(Googleアナリティクス)を使ってもよいですか?同意しなくても、サイトはそのままご利用いただけます。 <a href="../privacy.html">プライバシーポリシー</a></p><p class="consent-btns"><button type="button" data-consent="granted">同意する</button><button type="button" data-consent="denied">同意しない</button></p></div>
+<footer><div class="wrap"><p><a href="../privacy.html">プライバシーポリシー</a> / <a href="../terms.html">利用規約</a> / <a href="../support.html">サポート・お問い合わせ</a></p><p>&copy; 2026 Haruyoshi Nagafune. Birdzzle is an original game; all birds are fictional illustrations.</p></div></footer>
+</body>
+</html>
