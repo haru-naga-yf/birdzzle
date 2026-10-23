@@ -60,6 +60,8 @@
     if (a.classList.contains('dl')) {
       var m = a.href.match(/[?&]ct=([^&]+)/);
       gtag('event', 'app_store_click', { campaign: m ? m[1] : '', page_path: location.pathname });
+    } else if (a.classList.contains('review')) {
+      gtag('event', 'review_link_click', { campaign: a.getAttribute('data-src') || '', page_path: location.pathname });
     } else if (a.classList.contains('open-app')) {
       gtag('event', 'app_open_click', { campaign: a.getAttribute('data-src') || '', page_path: location.pathname });
     }
